@@ -1,17 +1,27 @@
 package tallerfinalJavaPunto1a15;
 
-/** TODO:Declara 2 variables numéricas (con el valor que desees), he indica cual es mayor de los dos. Si son iguales indicarlo también.Ve cambiando los valores para comprobar que funciona.
+import java.util.Scanner;
+
+/**TODO:Al ejercicio anterior agregar entrada por consola de dos valores e indicar si son mayores, menores o iguales.
  * @author Fernando Quiceno Gomez*/
 
-public class Punto1 {
+public class Punto2 {
     public static void main(String[] args) {
 
         /**
          * @param variable1 numero para comparar con variable2 (mayor, menor o igual)
          * @param variable2 numero para comparar con varible1 (mayor, menor o igual)
          */
-        double variable1 = 5;
-        double variable2 = 5;
+        double variable1 ;
+        double variable2 ;
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Ingrese el primer numero a comparar");
+        variable1 = entrada.nextDouble();
+
+        System.out.println("Ingrese el segundo numero a comparar");
+        variable2 = entrada.nextDouble();
 
         if(variable1 < variable2){
             System.out.println("El numero "+variable1+" es MENOR que "+variable2);
