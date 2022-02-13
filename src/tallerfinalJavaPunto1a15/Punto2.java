@@ -23,6 +23,8 @@ public class Punto2 {
         System.out.println("Ingrese el segundo numero a comparar");
         variable2 = entrada.nextDouble();
 
+        entrada.close();
+
         if(variable1 < variable2){
             System.out.println("El numero "+variable1+" es MENOR que "+variable2);
         }else if(variable1 > variable2){
