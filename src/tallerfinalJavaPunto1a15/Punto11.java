@@ -16,7 +16,7 @@ public class Punto11 {
          * adicional se crea una estructura de datos llamada hashMap para guardar la cantidad de vocales
          * que se encuentran en la frase, estas se inicializan en 0
          */
-        
+
         String fraseIngresadaporUsuario;
         HashMap<String,Integer> hashMap = new HashMap<>();
 
