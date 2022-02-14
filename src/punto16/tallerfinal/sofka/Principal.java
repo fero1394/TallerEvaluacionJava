@@ -112,12 +112,6 @@ public class Principal {
                 "2-PARA SABER SI LA PERSONA ES MAYOR DE EDAD\n" +
                 "3-MOSTRAR INFORMACION DE LAS 3 PERSONAS\n"));
 
-//        System.out.println("****MENU****\n" +
-//                "1-PARA COMPROBAR SI LA PERSONA ESTA EN EL PESO IDEAL\n" +
-//                "2-PARA SABER SI LA PERSONA ES MAYOR DE EDAD\n" +
-//                "3-MOSTRAR INFORMACION DE LAS 3 PERSONAS\n");
-
-
         /**
          * Segun la opcion que el usuario haya escogido, el programa
          * tomara la desicion correcta para cumplir la peticion del usuario
@@ -129,13 +123,11 @@ public class Principal {
                     pesoideal = listaPersonas.get(i).calcularIMC(listaPersonas.get(i).getPeso(),listaPersonas.get(i).getAltura() );
                     if(pesoideal==-1){
                         JOptionPane.showMessageDialog(null, listaPersonas.get(i).getNombre()+" Tiene el peso Ideal");
-                        //System.out.println(listaPersonas.get(i).getNombre()+" Tiene el peso Ideal");
                     }else if(pesoideal == 0){
                         JOptionPane.showMessageDialog(null,listaPersonas.get(i).getNombre()+" esta por Debajo de su peso Ideal");
-                        //System.out.println(listaPersonas.get(i).getNombre()+" Tiene esta por Debajo de su peso Ideal");
                     }else{
                         JOptionPane.showMessageDialog(null,listaPersonas.get(i).getNombre()+" Tiene SobrePeso");
-                        //System.out.println(listaPersonas.get(i).getNombre()+" Tiene SobrePeso");
+
                     }
                 }
                 break;
@@ -143,10 +135,9 @@ public class Principal {
                 for(int i=0;i<=2;i++){
                     if(listaPersonas.get(i).esMayorDeEdad()){
                         JOptionPane.showMessageDialog(null,listaPersonas.get(i).getNombre() +" Es Mayor de edad");
-                        //System.out.println(listaPersonas.get(i).getNombre() +" Es Mayor de edad" );
                     }else{
                         JOptionPane.showMessageDialog(null,listaPersonas.get(i).getNombre() +" Es Menor de edad");
-                        //System.out.println(listaPersonas.get(i).getNombre() +" Es Menor de edad");
+
                     }
                 }
                 break;
