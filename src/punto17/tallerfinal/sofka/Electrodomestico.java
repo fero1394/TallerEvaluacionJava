@@ -16,5 +16,36 @@ public class Electrodomestico {
     private double peso;
     private ArrayList<String> listaColores = new ArrayList<String>();
 
+    /**
+     * Constructores
+     */
+    //CONSTRUCTOR CON PRECIOBASE Y PESO EL RESTOD DE ATRIBUTOS POR DEFECTO
+    public Electrodomestico(double precioBase,double peso){
+        this.precioBase = precioBase;
+        this.color = COLOR;
+        this.consumoEnergetico = CONSUMOENERGETICO;
+        this.peso = peso;
+    }
+
+    //CONSTRUCTOR CON TODOS LOS ATRIBUTOS
+    public Electrodomestico(double precioBase,String color,char consumoEnergetico,double peso) {
+        this.precioBase = precioBase;
+        this.color = color;
+        this.consumoEnergetico = consumoEnergetico;
+        this.peso = peso;
+    }
+
+    //CONSTRUCTOR POR DEFECTO
+    public Electrodomestico(){
+        this.precioBase = PRECIOBASE;
+        this.color = COLOR;
+        this.consumoEnergetico = CONSUMOENERGETICO;
+        this.peso = PESO;
+    }
+
+
+
+
+
 
 }
