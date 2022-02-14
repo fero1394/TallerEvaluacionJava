@@ -1,0 +1,11 @@
+
+H
+java:S1135	"2Complete the task associated to this TODO comment.(¼‡ÅÍ
+V
+java:S1854";Remove this useless assignment to local variable "entrada".(¥µÙ“þÿÿÿÿ
+G
+java:S1481",Remove this unused "entrada" local variable.(¥µÙ“þÿÿÿÿ
+^
+java:S3986"HMake sure that week Year "YYYY" is expected here instead of Year "yyyy".(³ÚÌà
+S	java:S106"9Replace this use of System.out or System.err by a logger.(’Úýßøÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Í¶Œÿ
