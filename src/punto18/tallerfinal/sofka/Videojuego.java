@@ -71,6 +71,9 @@ public class Videojuego {
         this.compañia = compañia;
     }
 
+    public String toString(){
+        return "Titulo: "+titulo+" Horas Estimadas: "+horasEstimadas+" Genero: "+genero+" Compañia: "+compañia;
+    }
 
 
 
