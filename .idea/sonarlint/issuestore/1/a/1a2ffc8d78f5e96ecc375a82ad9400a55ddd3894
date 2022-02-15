@@ -1,0 +1,9 @@
+
+e	java:S116"PRename this field "CARGA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š——´
+7
+java:S1170"!Make this final field static too.(š——´
+i
+java:S1845	"NRename field "carga" to prevent any misunderstanding/clash with field "CARGA".(…€À–ûÿÿÿÿ
+W
+java:S1161)":Add the "@Override" annotation above this method signature(ó‘ä¸8®¶·Ýï/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Œïöúÿÿÿÿ

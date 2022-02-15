@@ -1,0 +1,18 @@
+
+h
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(œû¿Ø
+[
+java:S1854"@Remove this useless assignment to local variable "sexoPersona1".(è§‘³ûÿÿÿÿ
+V
+java:S1854
+";Remove this useless assignment to local variable "entrada".(¥µÙ“þÿÿÿÿ
+‚
+java:S1130	"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø
+G
+java:S1481
+",Remove this unused "entrada" local variable.(¥µÙ“þÿÿÿÿ
+<	java:S131x""Add a default case to this switch.( ÿûæûÿÿÿÿ
+V	java:S106’"9Replace this use of System.out or System.err by a logger.(ŒÂ¯™8å·òÒï/
+o
+java:S2293d"YReplace the type specification in this constructor call with the diamond operator ("<>").(Íó›Š
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ð“©ßýÿÿÿÿ

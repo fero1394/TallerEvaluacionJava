@@ -1,0 +1,15 @@
+
+o	java:S116"URename this field "RESOLUCION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿóÞüýÿÿÿÿ
+t	java:S116"ZRename this field "SINTONIZADORTDT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÖÿÿùÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(ÿóÞüýÿÿÿÿ
+<
+java:S1170"!Make this final field static too.(ñÖÿÿùÿÿÿÿ
+n
+java:S1845	"XRename field "resolucion" to prevent any misunderstanding/clash with field "RESOLUCION".(ˆ°®¹
+x
+java:S1845
+"bRename field "sintonizadorTDT" to prevent any misunderstanding/clash with field "SINTONIZADORTDT".(Îž²
+W
+java:S11611":Add the "@Override" annotation above this method signature(ó‘ä¸8ªïËÝï/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Œïöúÿÿÿÿ

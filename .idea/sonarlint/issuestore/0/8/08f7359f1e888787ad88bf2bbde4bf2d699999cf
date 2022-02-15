@@ -1,0 +1,9 @@
+
+h	java:S116"NRename this field "DNI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿”±åúÿÿÿÿ
+R
+java:S1172"7Remove these unused method parameters "peso", "altura".(²Õœðýÿÿÿÿ
+W
+java:S1126F"AReplace this if-then-else statement by a single return statement.(éº©í
+9
+java:S2119l"Save and re-use this "Random".(òäßéùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ð“©ßýÿÿÿÿ

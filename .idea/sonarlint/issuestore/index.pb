@@ -11,3 +11,15 @@ Y
 )src/tallerfinalJavaPunto1a15/Punto15.java,a\f\afa216814a07352b0fb025e335fc61bce3761df0
 Y
 )src/tallerfinalJavaPunto1a15/Punto12.java,1\d\1d03c187a76acb1eb35e3c2abdac17af1c264256
+\
+,src/punto16/tallerfinal/sofka/Principal.java,4\7\47541c9c4b95ddba914a11362b8c7fe3550d046a
+Z
+*src/punto16/tallerfinal/sofka/Persona.java,0\8\08f7359f1e888787ad88bf2bbde4bf2d699999cf
+]
+-src/punto17/tallerfinal/sofka/Television.java,9\f\9f224fd5285774e07515bcd683b6491300120e3f
+[
++src/punto17/tallerfinal/sofka/Lavadora.java,1\a\1a2ffc8d78f5e96ecc375a82ad9400a55ddd3894
+W
+'src/punto17/tallerfinal/sofka/Main.java,7\0\704ee1c028e1c1abc3869053fe290964ed63d8eb
+c
+3src/punto17/tallerfinal/sofka/Electrodomestico.java,9\d\9dd7fe8963b6a062788a30492d690a341beb86e8

@@ -1,6 +1,6 @@
 package punto18.tallerfinal.sofka;
 
-public class Videojuego {
+public class Videojuego implements Entregable{
     /**
      * Atributos
      */
@@ -71,10 +71,38 @@ public class Videojuego {
         this.compañia = compañia;
     }
 
+    @Override
     public String toString(){
         return "Titulo: "+titulo+" Horas Estimadas: "+horasEstimadas+" Genero: "+genero+" Compañia: "+compañia;
     }
 
+    @Override
+    public void entregar() {
+
+    }
+
+    @Override
+    public void devolver() {
+
+    }
+
+    @Override
+    public void isEntregado() {
+
+    }
+
+    @Override
+    public int compareTo(Object a) {
+        int salidaDelMetodo = 0;
+        if(horasEstimadas == (int)a){
+            salidaDelMetodo = 0;
+        }else if(horasEstimadas > (int)a){
+            salidaDelMetodo = -1;
+        }else if(horasEstimadas < (int)a){
+            salidaDelMetodo = 1;
+        }
+        return salidaDelMetodo;
+    }
 
 
 }

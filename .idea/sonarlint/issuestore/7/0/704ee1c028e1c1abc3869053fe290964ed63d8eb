@@ -1,0 +1,12 @@
+
+V
+java:S1854";Remove this useless assignment to local variable "samsung".(Œ³ûùÿÿÿÿ
+G
+java:S1481",Remove this unused "samsung" local variable.(Œ³ûùÿÿÿÿ
+R
+java:S3972/"7Move this "if" to a new line or add the missing "else".(¸Öóıÿÿÿÿ
+R
+java:S39721"7Move this "if" to a new line or add the missing "else".(Ê¹Úüÿÿÿÿ
+V	java:S1255"<This block of commented-out lines of code should be removed.(Êœ®‹ûÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(„îÊşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Œïöúÿÿÿÿ

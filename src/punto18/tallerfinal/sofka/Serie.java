@@ -1,6 +1,6 @@
 package punto18.tallerfinal.sofka;
 
-public class Serie {
+public class Serie implements Entregable{
     /**
      * Atributos
      */
@@ -71,5 +71,38 @@ public class Serie {
         return "Titulo: "+titulo+" Numero de temporadas: "+numeroDeTemporadas+" Entregado: "+entregado+" Genero: "+genero+" Creador: "+creador;
     }
 
+
+    @Override
+    public void entregar() {
+        this.entregado = true;
+    }
+
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
+
+    @Override
+    public void isEntregado() {
+        if(entregado){
+            this.entregado = false;
+        }
+        else{
+            this.entregado = true;
+        }
+    }
+
+    @Override
+    public int compareTo(Object a) {
+        int salidaDelMetodo = 0;
+        if(numeroDeTemporadas == (int)a){
+            salidaDelMetodo = 0;
+        }else if(numeroDeTemporadas > (int)a){
+            salidaDelMetodo = -1;
+        }else if(numeroDeTemporadas < (int)a){
+            salidaDelMetodo = 1;
+        }
+        return salidaDelMetodo;
+    }
 
 }
