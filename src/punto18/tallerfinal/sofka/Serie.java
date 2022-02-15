@@ -68,7 +68,7 @@ public class Serie implements Entregable{
 
     @Override
     public String toString(){
-        return "Titulo: "+titulo+" Numero de temporadas: "+numeroDeTemporadas+" Entregado: "+entregado+" Genero: "+genero+" Creador: "+creador;
+        return "Titulo: "+titulo+" Numero de temporadas: "+numeroDeTemporadas+" Genero: "+genero+" Creador: "+creador;
     }
 
 
@@ -83,12 +83,12 @@ public class Serie implements Entregable{
     }
 
     @Override
-    public void isEntregado() {
+    public boolean isEntregado() {
         if(entregado){
-            this.entregado = false;
+            return true;
         }
         else{
-            this.entregado = true;
+            return false;
         }
     }
 

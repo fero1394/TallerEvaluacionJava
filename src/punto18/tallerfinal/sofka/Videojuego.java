@@ -73,22 +73,27 @@ public class Videojuego implements Entregable{
 
     @Override
     public String toString(){
-        return "Titulo: "+titulo+" Horas Estimadas: "+horasEstimadas+" Genero: "+genero+" Compañia: "+compañia;
+        return "Titulo: "+getTitulo()+" Horas Estimadas: "+getHorasEstimadas()+" Genero: "+getGenero()+" Compañia: " + getCompañia();
     }
 
     @Override
     public void entregar() {
-
+        this.entregado = true;
     }
 
     @Override
     public void devolver() {
-
+        this.entregado = false;
     }
 
     @Override
-    public void isEntregado() {
-
+    public boolean isEntregado() {
+        if(entregado){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override

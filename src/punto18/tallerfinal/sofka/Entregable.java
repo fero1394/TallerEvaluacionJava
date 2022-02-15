@@ -6,7 +6,7 @@ public interface Entregable {
 
     public void devolver();
 
-    public void isEntregado();
+    public boolean isEntregado();
 
     public int compareTo(Object a);
 }
