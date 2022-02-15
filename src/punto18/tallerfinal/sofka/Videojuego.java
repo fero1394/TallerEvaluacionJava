@@ -31,4 +31,25 @@ public class Videojuego {
     public Videojuego() {
 
     }
+
+    /**
+     * Metodos Getters
+     */
+
+    public String getTitulo(){
+        return titulo;
+    }
+
+    public int getHorasEstimadas(){
+        return horasEstimadas;
+    }
+
+    public String getGenero(){
+        return genero;
+    }
+
+    public String getCompañia(){
+        return compañia;
+    }
+
 }
