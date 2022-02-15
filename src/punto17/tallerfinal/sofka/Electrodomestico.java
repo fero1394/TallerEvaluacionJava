@@ -34,9 +34,8 @@ public class Electrodomestico {
     //CONSTRUCTOR CON TODOS LOS ATRIBUTOS
     public Electrodomestico(double precioBase,String color,char consumoEnergetico,double peso) {
         this.precioBase = precioBase;
-        this.color = color;
-        this.consumoEnergetico = consumoEnergetico;
         this.peso = peso;
+        comprobarColor(color);
         comprobarConsumoEnergetico(consumoEnergetico);
     }
 
@@ -82,7 +81,7 @@ public class Electrodomestico {
         listaLetrasConsumo.add('F');
 
         char letraMayuscula = Character.toUpperCase(letra);
-        for(int i = 0; i<=listaLetrasConsumo.size(); i++){
+        for(int i = 0; i<listaLetrasConsumo.size(); i++){
             if(letraMayuscula != listaLetrasConsumo.get(i)){
                 this.consumoEnergetico = CONSUMOENERGETICO;
             }else{
@@ -105,7 +104,7 @@ public class Electrodomestico {
         listaColores.add("GRIS");
 
         String colorMayuscula = color.toUpperCase();
-        for(int i=0;i<= listaColores.size();i++){
+        for(int i=0;i< listaColores.size();i++){
             if(colorMayuscula != listaColores.get(i)){
                 this.color = COLOR;
             }else{
@@ -124,7 +123,7 @@ public class Electrodomestico {
      */
     public double precioFinal(){
         double preciofinal = 0;
-        preciofinal =+ precioBase;
+        preciofinal += precioBase;
 
         preciosSegunConsumo.put('A', 100.0);
         preciosSegunConsumo.put('B', 80.0);
@@ -133,16 +132,16 @@ public class Electrodomestico {
         preciosSegunConsumo.put('E', 30.0);
         preciosSegunConsumo.put('F', 10.0);
 
-        preciofinal =+ preciosSegunConsumo.get(consumoEnergetico);
+        preciofinal += preciosSegunConsumo.get(consumoEnergetico);
 
-        if(peso<=0 && peso>=19){
-            preciofinal =+ 10.0;
+        if(peso>=0 && peso<=19){
+            preciofinal += 10.0;
         }else if(peso>=20 && peso<=49){
-            preciofinal =+ 50.0;
+            preciofinal += 50.0;
         }else if(peso>=50 && peso<=79){
-            preciofinal =+ 80.0;
+            preciofinal += 80.0;
         }else if(peso>=80){
-            preciofinal =+ 100.0;
+            preciofinal += 100.0;
         }else{
             System.out.println("El peso no es correcto");
         }

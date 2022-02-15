@@ -35,20 +35,18 @@ public class Lavadora extends Electrodomestico{
     }
 
     /**
-     * metodo para calcular el precio final teniendo encuenta las condiciones de la clase
+     * metodo para calcular el precio final conservando las condiciones de la clase padre
      * padre
      */
     public double precioFinal(){
         double variablePrecioFinal = super.precioFinal();
 
         if(carga>30.0){
-            variablePrecioFinal =+ 50.0;
+            variablePrecioFinal += 50.0;
         }
 
         return variablePrecioFinal;
     }
-
-
 
 
 }

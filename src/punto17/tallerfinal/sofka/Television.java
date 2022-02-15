@@ -42,13 +42,17 @@ public class Television extends Electrodomestico{
         return sintonizadorTDT;
     }
 
+    /**
+     * Metodo precio final de televisores conservando las condiciones de la clase padre
+     * @return
+     */
     public double precioFinal(){
         double variablePrecioFinal = super.precioFinal();
         if(resolucion>40){
-            variablePrecioFinal =+ (variablePrecioFinal*0.30);
+            variablePrecioFinal += (variablePrecioFinal*0.30);
         }
         if(sintonizadorTDT){
-            variablePrecioFinal =+ 50.0;
+            variablePrecioFinal += 50.0;
         }
         return variablePrecioFinal;
     }
