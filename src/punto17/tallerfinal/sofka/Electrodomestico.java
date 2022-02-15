@@ -14,17 +14,18 @@ public class Electrodomestico {
     private String color;
     private char consumoEnergetico;
     private double peso;
-    private ArrayList<String> listaColores = new ArrayList<String>();
+    private ArrayList<Character> listaLetrasConsumo = new ArrayList<Character>();
 
     /**
      * Constructores
      */
-    //CONSTRUCTOR CON PRECIOBASE Y PESO EL RESTOD DE ATRIBUTOS POR DEFECTO
+    //CONSTRUCTOR CON PRECIOBASE Y PESO EL RESTO DE ATRIBUTOS POR DEFECTO
     public Electrodomestico(double precioBase,double peso){
         this.precioBase = precioBase;
         this.color = COLOR;
         this.consumoEnergetico = CONSUMOENERGETICO;
         this.peso = peso;
+
     }
 
     //CONSTRUCTOR CON TODOS LOS ATRIBUTOS
@@ -33,6 +34,7 @@ public class Electrodomestico {
         this.color = color;
         this.consumoEnergetico = consumoEnergetico;
         this.peso = peso;
+        comprobarConsumoEnergetico(consumoEnergetico);
     }
 
     //CONSTRUCTOR POR DEFECTO
@@ -43,6 +45,48 @@ public class Electrodomestico {
         this.peso = PESO;
     }
 
+    /**
+     * metodos getters
+     */
+
+    public double getPrecioBase(){
+        return precioBase;
+    }
+
+    public String getColor(){
+        return color;
+    }
+
+    public char getConsumoEnergetico(){
+        return consumoEnergetico;
+    }
+
+    public double getPeso(){
+        return peso;
+    }
+
+    /**
+     * comprueba si la letra que se ingresa como parametro esta en la lista de las opciones
+     * que existen si no esta se deja la letra por defecto
+     * @param letra
+     */
+    public void comprobarConsumoEnergetico(char letra){
+        listaLetrasConsumo.add('A');
+        listaLetrasConsumo.add('B');
+        listaLetrasConsumo.add('C');
+        listaLetrasConsumo.add('D');
+        listaLetrasConsumo.add('E');
+        listaLetrasConsumo.add('F');
+
+        char letraMayuscula = Character.toUpperCase(letra);
+        for(int i = 0; i<=listaLetrasConsumo.size(); i++){
+            if(letraMayuscula != listaLetrasConsumo.get(i)){
+                this.consumoEnergetico = CONSUMOENERGETICO;
+            }else{
+                this.consumoEnergetico = letra;
+            }
+        }
+    }
 
 
 
