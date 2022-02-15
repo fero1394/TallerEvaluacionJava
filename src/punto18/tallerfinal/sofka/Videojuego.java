@@ -52,4 +52,26 @@ public class Videojuego {
         return compañia;
     }
 
+    /**
+     * Metodos set de todos los atributos excepto entregado
+     */
+    public void setTitulo(String titulo){
+        this.titulo = titulo;
+    }
+
+    public void setHorasEstimadas(int horasEstimadas){
+        this.horasEstimadas = horasEstimadas;
+    }
+
+    public void setGenero(String genero){
+        this.genero = genero;
+    }
+
+    public void setCompañia(String compañia){
+        this.compañia = compañia;
+    }
+
+
+
+
 }
