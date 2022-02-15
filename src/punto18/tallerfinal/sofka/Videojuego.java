@@ -10,4 +10,25 @@ public class Videojuego {
     private String genero;
     private String compañia;
 
+
+    /**
+     * Constructores
+     */
+
+    public Videojuego(String titulo, int horasEstimadas, String genero, String compañia) {
+        this.titulo = titulo;
+        this.horasEstimadas = horasEstimadas;
+        this.genero = genero;
+        this.compañia = compañia;
+
+    }
+
+    public Videojuego(String titulo, int horasEstimadas) {
+        this.titulo = titulo;
+        this.horasEstimadas = horasEstimadas;
+    }
+
+    public Videojuego() {
+
+    }
 }
